@@ -9,6 +9,7 @@ import { Container } from '@mui/system';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import BasicAlerts from './component/Alerts';
+import SwipeableTextMobileStepper from './component/ImageSlider';
 // import { Grid } from '@mui/material';
 //import CustomCard from './component/CustomCard';
 
@@ -19,8 +20,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
   <React.StrictMode>
+    <ResponsiveAppBar/>
     <Container>
-      <ResponsiveAppBar/>
      <Container>
       <BasicAlerts></BasicAlerts>
       
@@ -71,14 +72,16 @@ root.render(
 <CardsLayout></CardsLayout>
 
 <p style={{textAlign:'center'}}><b>Add more:</b> Support for 
-<a href="ok" style={{textDecoration: 'none'}}> enviroment varaible</a> ,
-<a href="ok" style={{textDecoration: 'none'}}> preview mode</a> ,
-<a href="ok" style={{textDecoration: 'none'}}> custom head tags</a> ,
-<a href="ok" style={{textDecoration: 'none'}}> automatic</a> ,
-<a href="ok" style={{textDecoration: 'none'}}> enviroment</a>  and more.
+<a href="#" style={{textDecoration: 'none'}}> enviroment varaible</a> ,
+<a href="#" style={{textDecoration: 'none'}}> preview mode</a> ,
+<a href="#" style={{textDecoration: 'none'}}> custom head tags</a> ,
+<a href="#" style={{textDecoration: 'none'}}> automatic</a> ,
+<a href="#" style={{textDecoration: 'none'}}> enviroment</a>  and more.
 </p>
     
-
+  <SwipeableTextMobileStepper>
+    
+  </SwipeableTextMobileStepper>
 
       <SimpleBottomNavigation/>
       </Container>
